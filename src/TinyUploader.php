@@ -12,7 +12,7 @@ class TinyUploader extends Field\Image
      * @param array|\Symfony\Component\HttpFoundation\File\UploadedFile $image
      * @return string
      */
-    public function prepareForeach($image): string
+    public function prepare($image): string
     {
         setKey(env('TINY_PNG_KEY'));
         $data = fromBuffer(file_get_contents($image->getPathname()))->toBuffer();
