@@ -30,3 +30,13 @@ Use it in the form:
 $form->tinyField('content');
 $form->tinyField('tinyMultipleField');
 ```
+
+Support for original field methods is retained
+
+```php
+$form->tinyField('content')->move('/uploader')->uniqueName();
+$form->tinyField('tinyMultipleField')->thumbnail([
+                'medium' => [800, null],
+                'small' => [400, null]
+            ])->move('/img')->uniqueName()->removable();
+```
