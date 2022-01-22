@@ -8,12 +8,12 @@ Compress your images when uploading with api `TinyPng`
 ## Installation
 
 ```bash
-composer require anton-spaa/tinyfield
+composer require anton-a46/tinyfield
 ```
 
 Then
 ```bash
-php artisan vendor:publish --provider=spaa\TinyField\TinyFieldServiceProvider
+php artisan vendor:publish --provider=anton-a46\tinyfield\TinyFieldServiceProvider
 ```
 
 ## Configuration

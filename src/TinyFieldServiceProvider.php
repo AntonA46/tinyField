@@ -19,9 +19,6 @@ class TinyFieldServiceProvider extends ServiceProvider
 
         Admin::booting(function () {
             Form::extend('tinyField', TinyUploader::class);
-        });
-
-        Admin::booting(function () {
             Form::extend('tinyMultipleField', TinyMultipleField::class);
         });
     }
